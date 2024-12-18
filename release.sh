@@ -43,6 +43,12 @@ if [ ! -f module.json ]; then
     exit 1
 fi
 sed -i "s/$LAST_TAG/$NEW_TAG/g" module.json
+git add module.json
+git commit -m 'Release $NEW_TAG'
+git push origin
+git tag "$NEW_TAG"
+git push origin "$NEW_TAG"
+
 
 # Create a zip of all files in the repository excluding the .git folder and the release zip itself.
 ZIP_NAME=build/curse-of-strahd-reloaded.zip
@@ -51,8 +57,7 @@ mkdir -p build
 zip -r "$ZIP_NAME" . -x "*.git*" "$ZIP_NAME"
 
 
-git tag "$NEW_TAG"
-git push origin "$NEW_TAG"
+
 
 
 # Create a GitHub release using the GitHub CLI.
