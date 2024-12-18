@@ -112,7 +112,7 @@
     }
   ],
   "scripts": [
-    "scripts/cos-r.js"
+    "Scripts/cos-r.js"
   ],
   "styles": [
     "css/cos-r.css"
