@@ -14,8 +14,9 @@ if [ ! -f module.json ]; then
 fi
 
 # Create a zip of all files in the repository excluding the .git folder and the release zip itself.
-ZIP_NAME="release-$TAG_NAME.zip"
+ZIP_NAME=build/curse-of-strahd-reloaded.zip
 rm -f "$ZIP_NAME"
+mkdir -p build
 zip -r "$ZIP_NAME" . -x "*.git*" "$ZIP_NAME"
 
 # Create a GitHub release using the GitHub CLI.
