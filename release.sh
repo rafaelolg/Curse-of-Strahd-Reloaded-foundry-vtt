@@ -45,7 +45,6 @@ fi
 sed -i "s/$LAST_TAG/$NEW_TAG/g" module.json
 git add module.json
 git commit -m 'Release $NEW_TAG'
-git push origin
 git tag "$NEW_TAG"
 git push origin "$NEW_TAG"
 
