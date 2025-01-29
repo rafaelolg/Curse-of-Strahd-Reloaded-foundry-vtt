@@ -89,6 +89,6 @@
   "styles": [
     "css/cos-r.css"
   ],
-  "manifest": "https://github.com/rafaelolg/Curse-of-Strahd-Reloaded-foundry-vtt/releases/download/v0.1.4/module.json",
-  "download": "https://github.com/rafaelolg/Curse-of-Strahd-Reloaded-foundry-vtt/releases/download/v0.1.4/curse-of-strahd-reloaded.zip"
+  "manifest": "https://github.com/rafaelolg/Curse-of-Strahd-Reloaded-foundry-vtt/releases/download/v0.1.5/module.json",
+  "download": "https://github.com/rafaelolg/Curse-of-Strahd-Reloaded-foundry-vtt/releases/download/v0.1.5/curse-of-strahd-reloaded.zip"
 }
